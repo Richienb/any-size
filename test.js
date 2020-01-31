@@ -1,13 +1,13 @@
 const test = require("ava")
-const theModule = require(".")
+const size = require(".")
 
 test("main", (t) => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number",
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.is(size({ a: 1, b: 2, c: 3 }), 3)
+	t.is(size([1, 2, 3, 4, 5]), 5)
+	t.is(size("unicorns"), 8)
+	t.is(size(12345.678), 9)
+	t.is(size(new Map([["a", 1], ["b", 2], ["c", 3]])), 3)
+	t.is(size(new Set([1, 2, 3, 4, 5])), 5)
+	t.is(size(null), 0)
+	t.is(size(undefined), 0)
 })

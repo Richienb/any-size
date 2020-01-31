@@ -1,41 +1,36 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Any Size [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/any-size/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/any-size)
 
-My awesome module.
+Get the size of any type of value. Supports objects, array-like objects, strings with ansi stripping and unicode normalization, numbers, maps and sets.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/any-size.png)](https://npmjs.com/package/any-size)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install any-size
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const size = require("any-size");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+size("unicorns");
+//=> 8
+ 
+size([1, 2, 3, 4, 5]);
+//=> 5
+
+size({a: 1, b: 2, c: 3});
+//=> 3
 ```
 
 ## API
 
-### theModule(input, options?)
+### anySize(input)
 
 #### input
 
-Type: `string`
+Type: `any`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The value to get the size of.
