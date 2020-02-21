@@ -17,10 +17,22 @@
 		"lint": "xo",
 		"test": "yarn lint && ava"
 	},
-	"keywords": [],
+	"keywords": [
+		"size",
+		"any",
+		"number",
+		"string",
+		"array",
+		"object",
+		"plain",
+		"iterable",
+		"array-like",
+		"set",
+		"map"
+	],
 	"dependencies": {
-		"@sindresorhus/is": "^2.0.0",
-		"string-length": "^3.1.0"
+		"@sindresorhus/is": "^2.1.0",
+		"string-length": "^4.0.0"
 	},
 	"devDependencies": {
 		"ava": "^3.0.0",

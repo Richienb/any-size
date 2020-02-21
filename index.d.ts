@@ -15,6 +15,6 @@
  * //=> 3
  * ```
 */
-declare function anySize(input: unknown): number;
+declare function anySize(input: unknown): number
 
-export = anySize;
+export = anySize
