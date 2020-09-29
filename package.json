@@ -1,6 +1,6 @@
 {
 	"name": "any-size",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"description": "Get the size of any type of value.",
 	"repository": "https://github.com/Richienb/any-size.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
