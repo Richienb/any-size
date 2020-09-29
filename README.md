@@ -1,6 +1,6 @@
 # Any Size [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/any-size/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/any-size)
 
-Get the size of any type of value. Supports objects, array-like objects, strings with ansi stripping and unicode normalization, numbers, maps and sets.
+Get the size of a value. Supports objects, array-like objects, strings (with ansi stripping and unicode character recognition), numbers, maps and sets.
 
 [![NPM Badge](https://nodei.co/npm/any-size.png)](https://npmjs.com/package/any-size)
 
@@ -13,15 +13,15 @@ npm install any-size
 ## Usage
 
 ```js
-const size = require("any-size");
+const size = require("any-size")
 
-size("unicorns");
+size("unicorns")
 //=> 8
  
-size([1, 2, 3, 4, 5]);
+size([1, 2, 3, 4, 5])
 //=> 5
 
-size({a: 1, b: 2, c: 3});
+size({a: 1, b: 2, c: 3})
 //=> 3
 ```
 
