@@ -24,5 +24,9 @@ module.exports = input => {
 		return input.size
 	}
 
+	if (is.arrayBuffer(input)) {
+		return input.byteLength
+	}
+
 	return 0
 }
