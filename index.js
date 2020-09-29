@@ -5,7 +5,7 @@ const stringLength = require("string-length")
 
 module.exports = input => {
 	if (is.plainObject(input)) {
-		return Object.keys(input).length
+		return Object.getOwnPropertyNames(input).length + Object.getOwnPropertySymbols(input).length
 	}
 
 	if (is.arrayLike(input)) {
