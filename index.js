@@ -8,12 +8,12 @@ module.exports = input => {
 		return Object.getOwnPropertyNames(input).length + Object.getOwnPropertySymbols(input).length
 	}
 
-	if (is.arrayLike(input)) {
-		return input.length
-	}
-
 	if (is.string(input)) {
 		return stringLength(input)
+	}
+
+	if (is.arrayLike(input)) {
+		return input.length
 	}
 
 	if (is.number(input)) {
