@@ -1,6 +1,6 @@
 "use strict"
 
-const { default: is } = require("@sindresorhus/is")
+const is = require("@sindresorhus/is")
 const stringLength = require("string-length")
 
 module.exports = input => {
