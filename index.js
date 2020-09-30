@@ -16,7 +16,7 @@ module.exports = input => {
 		return input.length
 	}
 
-	if (is.number(input)) {
+	if (is.number(input) || is.bigint(input)) {
 		return input.toString().length
 	}
 

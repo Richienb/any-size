@@ -1,6 +1,6 @@
 # Any Size [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/any-size/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/any-size)
 
-Get the size of a value. Supports objects, array-like values, strings (with ansi stripping and unicode character recognition), numbers, maps, sets and array buffers.
+Get the size of a value. Supports objects, array-like values, strings (with ansi stripping and unicode character recognition), numbers, bigints, maps, sets and array buffers.
 
 [![NPM Badge](https://nodei.co/npm/any-size.png)](https://npmjs.com/package/any-size)
 
